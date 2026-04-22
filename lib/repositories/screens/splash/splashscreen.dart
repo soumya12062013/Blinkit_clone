@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:blinkit/domain/constants/appcolor.dart';
 import 'package:blinkit/repositories/widgets/uihelper.dart';
-import 'package:blinkit/repositories/screens/login/LoginScreen.dart';
+import 'package:blinkit/repositories/screens/onboarding/onboardingScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(builder: (context) => OnBoardingScreen()),
       );
     });
   }

@@ -1,3 +1,4 @@
+import 'package:blinkit/repositories/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -6,10 +7,15 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "LoginScreen",
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            UiHelper.CustomImage(img: "onboardingimg.png"),
+
+            SizedBox(height: 10),
+            UiHelper.CustomImage(img: "blinkitlogo.png"),
+          ],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:blinkit/repositories/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
+import 'package:blinkit/repositories/screens/BottomNav/BottomNav.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -61,7 +62,14 @@ class OnBoardingScreen extends StatelessWidget {
                           backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BottomNav(),
+                            ),
+                          );
+                        },
                         child: UiHelper.CustomText(
                           text: "Login",
                           color: Colors.white,
